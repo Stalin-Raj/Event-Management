@@ -4,6 +4,10 @@
 			body{
 				background: lightpink;
 			}
+			.heading{
+				font-family: sans-serif;
+				color: green;
+			}
 			#decoration img{
 				height: 300px;
 				width: 40%;
@@ -26,16 +30,24 @@
 			}
 
 			#navbar ul{
-				width: 40%;
-				font-size: 21px;
-				color: red;
 				display: flex;
-				position: relative;		
-				left:65%;
-				justify-content: space-between;	}
+				position: absolute;
+				left: 70%;
+				font-family: fantasy;
+				font-size: 20px;
+
+
+				}
+			 #navbar ul li{
+				margin-left: 30px;
+
+			}
 			#navigation{
 				text-align: center;
 				height: 200px;
+				position: relative;
+
+
 			}
 			#navigation ul{
 				font-size: 22px;
@@ -57,15 +69,15 @@
 	<body>
 		<div id="navbar">
 
-			<ul>
+			<ul><!-- Here I have Used unordered List-->
 			<a href="#"><li><p>Home</p></li></a>
 			<a href=#About><li><p>About</p></li></a>
 			<a href=#contact><li><p>contact</p></li></a>
 			<ul>
 	</div>
 	<div id="navigation">
-		<h2>Select the marriage type</h2>
-		<ul>
+		<h2 class="heading">Select the marriage type:</h2>
+		<ul><!-- Here I have Used unordered List-->
 			<a href=#food><li><p>Hindu Marriage</p></li></a>
 			<a href=#c-food><li><p>Christian Marriage</p></li></a>
 			<a href=#m-food><li><p>Muslim Marriage</p></li></a>
@@ -73,8 +85,11 @@
 		</ul>
 	</div>
 		<div id="decoration">
-			<h1>Marriage Decorations:</h1>
-			<h2>Ellite Bundle stating at 2lakhs</h2>
+			<dl><!-- Here I have Used Definition List-->
+
+				<dt><h1>Marriage Decorations:</h1></dt><!--Definition title-->
+				<dd><h2>Ellite Bundle stating at 2lakhs</h2></dd>
+			</dl><!--Definition data-->
 			<img src="https://3.imimg.com/data3/NJ/VI/MY-5264904/wedding-event-management-service-500x500.jpg" alt="img not available"></img>
 			<img src="https://5.imimg.com/data5/CF/MA/MY-11451915/event-planning-500x500.jpg"></img>
 
@@ -82,8 +97,14 @@
 			<img src="https://images.shaadisaga.com/shaadisaga_production/photos/pictures/000/557/826/original/IMG-20180917-WA0074.jpg?1538649690"></img>
 		</div>
 		<div id="food">
-			<h1>Hindu Marriage Foods:</h1>
-			<h2>South Indian and North Indian foods starting from 100 rupees per person</h2>
+			<dl>
+				<dt>
+					<h1>Hindu Marriage Foods:</h1>
+				</dt>
+				<dd>
+					<h2>South Indian and North Indian foods starting from 100 rupees per person</h2>
+				</dd>
+			</dl>
 
 			<img src="https://www.cravebits.com/wp-content/uploads/2014/07/South-Indian-wedding-food-1728x800_c.jpg"/>
 			<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnhTsfimTpKFi1d_7UDEd-SxTutFxvjIulPfuICb7lO-AN3sbC3htBN4n0g2T76hQctSM&usqp=CAU"/>
@@ -93,9 +114,13 @@
 
 		</div>
 		<div id="c-food">
-			<h1>Christian Marriage Foods:</h1>
-			<h2>South Indian and North Indian foods starting from 100 rupees per person</h2>
-
+			<dl>
+				<dt>
+					<h1>Christian Marriage Foods:</h1>
+				</dt>
+				<dd>
+					<h2>South Indian and North Indian foods starting from 100 rupees per person</h2>
+				</dd>
 			<img src="https://www.cravebits.com/wp-content/uploads/2014/07/South-Indian-wedding-food-1728x800_c.jpg"/>
 			<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnhTsfimTpKFi1d_7UDEd-SxTutFxvjIulPfuICb7lO-AN3sbC3htBN4n0g2T76hQctSM&usqp=CAU"/>
 
@@ -105,9 +130,15 @@
 		</div>
 
 		<div id="m-food">
-			<h1>Muslim Marriage Foods:</h1>
-			<h2>Halal Non veg foods and salads staring at 200 Rupees per person</h2>
-
+			<dl>
+				<dt>
+					<h1>Muslim Marriage Foods:</h1>
+				</dt>
+				<dd>	
+					<h2>Halal Non veg foods and salads staring at 200 
+					Rupees per person</h2>
+				</dd>
+			</dl>
 			<img src="https://i0.wp.com/food-heritage.org/wp-content/uploads/2018/05/Iftar1.jpg"></img>
 			<img src="https://i.ndtvimg.com/i/2016-06/ramadan-625_625x350_51465464030.jpg"></img>
 
